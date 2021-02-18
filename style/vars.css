@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+:root {
+
+    /* Font-size */
+    --baseSize: 16px;
+
+    /* Font-family */
+    --fontRoboto: normal 16px "Roboto", sans-serif;
+    --fontSourceSansPro: normal 16px "Source Sans Pro", Arial, sans-serif;
+    --fontMontserrat: normal 16px "Montserrat";
+
+    /* Color */
+    --baseColorText: #333333;
+    --baseColorTint: #03388d;
+    --baseColorFg: #ffffff;
+
+    /* More */
+
+}

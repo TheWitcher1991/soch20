@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#footer {
+    background: #282828;
+    color: #ffffff;
+    font-weight: 300;
+    padding: 16px 0 0 0;
+    margin: 36px 0 0 0;
+}
+
+#footer .flexs a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#footer .flexs {
+    margin: 0 15px 0 0;
+    padding: 0 10px;
+    flex-basis: 100%;
+    border-right: 1px solid #353535;
+}
+
+#footer .flexs .block {
+    margin: 0 0 16px 0;
+}
+
+#footer .mg-l {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#footer .mg-t {
+    font-size: 14px;
+}
+
+#footer .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .copy {
+    text-align: center;
+    font-weight: 800;
+    border-top: 1px solid  #353535;
+    color: #fff;
+    padding: 16px;
+    margin: 16px 0 0 0;
+    font-size: 36px;
+}
