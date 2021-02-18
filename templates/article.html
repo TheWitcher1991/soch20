@@ -7,7 +7,7 @@
 <head>
 
     <!-- SEO -->
-        <title>Главная - МБОУ СОШ №20</title>
+        <title>Неделя памяти - МБОУ СОШ №20</title>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -37,6 +37,7 @@
         <link rel="stylesheet" href="../style/vars.css">
         <link rel="stylesheet" href="../style/keyframes.css">
         <link rel="stylesheet" href="../style/normaline.css">
+        <link rel="stylesheet" href="../style/form.css">
         <link rel="stylesheet" href="../style/header.css">
         <link rel="stylesheet" href="../style/wrapper.css">
         <link rel="stylesheet" href="../style/footer.css">
@@ -63,6 +64,10 @@
         <!-- Style-Switcher -->
         <script src="../script/vendor/styleswitch/styleswitch.js"></script>
 
+        <!-- baguetteBox -->
+        <script src="../script/vendor/baguetteBox/baguetteBox.min.js"></script>
+        <link rel="stylesheet" href="../script/vendor/baguetteBox/baguetteBox.min.css">
+
     <!-- / Include JS&CSS libs ... -->
 </head>
 <body>
@@ -74,11 +79,11 @@
             <div class="flex-1"></div>
             <div class="flex-2">
                 <ul>
-                    <li><a href="">НАПИСАТЬ ДИРЕКТОРУ</a></li>
+                    <li><a href="../templates/report.html">НАПИСАТЬ ДИРЕКТОРУ</a></li>
                     <li><a href="">КОНТАКТЫ</a></li>
                     <li><a href="">О ШКОЛЕ</a></li>
                     <li class="search-li">
-                        <input type="text" name="search" id="search">
+                        <input type="text" placeholder="Поиск по сайту..." name="search" id="search">
                         <input type="button" id="search-bth" name="submit" value="Найти">
                     </li>
                 </ul>
@@ -93,16 +98,65 @@
                         <img src="../img/logo_20.jpg" alt="Logo">
                         <img class="lenta" src="../img/28.png" alt="lenta">
                     </span>
+                    <div>
+                        Муниципальное образовательное учреждение средняя общеобразовательная школа №20
+                    </div>
                 </div>
                 <div class="header__menu">
                     <ul>
                         <li><a href="../index.html" class="home">Главная</a></li>
-                        <li><a href="">Сведения об ОО</a></li>
-                        <li><a href="">ГИА</a></li>
-                        <li><a href="">Ученикам</a></li>
-                        <li><a href="">Родителям</a></li>
-                        <li><a href="">Деятельность</a></li>
-                        <li><a href="">Профсоюз</a></li>
+                        <li class="n1">
+                            <a href="">Сведения об ОО</a>
+                            <ul class="popup__menu popup__menu-n1">
+                                <li><a href="">Основные сведения</a></li>
+                                <li><a href="">Документы</a></li>
+                                <li><a href="">Образование</a></li>
+                                <li><a href="">Образовательные стандарты</a></li>
+                                <li><a href="">Вакантные места для приема</a></li>
+                                <li><a href="">История школы</a></li>
+                            </ul>
+                        </li>
+                        <li class="n2">
+                            <a href="">ГИА</a>
+                            <ul class="popup__menu popup__menu-n1">
+                                <li><a href="">ОГЭ</a></li>
+                                <li><a href="">ЕГЭ</a></li>
+                                <li><a href="">Экзаменационные плакаты</a></li>
+                                <li><a href="">Телефон горячей линии</a></li>
+                                <li><a href="">ОВЗ</a></li>
+                                <li><a href="">Видеоконсультации ЕГЭ</a></li>
+                            </ul>
+                        </li>
+                        <li class="n3">
+                            <a href="">Ученикам</a>
+                            <ul class="popup__menu popup__menu-n1">
+                                <li><a href="">Учебный процесс</a></li>
+                                <li><a href="">После уроков</a></li>
+                                <li><a href="">Памятки для учащихся</a></li>
+                                <li><a href="">Достижения учащихся</a></li>
+                                <li><a href="">Актуально!</a></li>
+                            </ul>
+                        </li>
+                        <li class="n4">
+                            <a href="">Родителям</a>
+                            <ul class="popup__menu popup__menu-n1">
+                                <li><a href="">Актуально!</a></li>
+                                <li><a href="">Опросы и анкетирование</a></li>
+                                <li><a href="">Памятки</a></li>
+                                <li><a href="">Библиотека</a></li>
+                                <li><a href="">Приём в первый класс</a></li>
+                            </ul>
+                        </li>
+                        <li class="n5">
+                            <a href="">Деятельность</a>
+                            <ul class="popup__menu popup__menu-n1">
+                                <li><a href="">ОРКиСЭ</a></li>
+                                <li><a href="">Анкета о оценки качества</a></li>
+                                <li><a href="">РПР / ВПР</a></li>
+                                <li><a href="">Лето</a></li>
+                            </ul>
+                        </li>
+                        <li class="n6"><a href="">Профсоюз</a></li>
                     </ul>
                 </div>
             </div>
@@ -165,7 +219,7 @@
         </aside>
         <div class="content">
             <div class="content__container">
-                <div class="logo__new-name">
+                <div class="logo__row-name">
                     <h1>Неделя памяти - <time>18.02.2021</time></h1>
                 </div>
                 <div class="home__content">
@@ -183,11 +237,11 @@
                                 
                             </div>
                             <div class="content-image">
-                                <ul>
-                                    <li><span><img src="../img/new_1_1.jpeg" alt="alt"></span></li>
-                                    <li><span><img src="../img/new_1_2.jpeg" alt="alt"></span></li>
-                                    <li><span><img src="../img/new_1_3.jpeg" alt="alt"></span></li>
-                                </ul>
+                                <div class="baguetteBoxOne gallery">
+                                    <a href="../img/new_1_1.jpeg"><img src="../img/new_1_1.jpeg" alt="alt"></a>
+                                    <a href="../img/new_1_2.jpeg"><img src="../img/new_1_2.jpeg" alt="alt"></a>
+                                    <a href="../img/new_1_3.jpeg"><img src="../img/new_1_3.jpeg" alt="alt"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -232,7 +286,7 @@
             </div>
             <div class="flex-2 flexs">
                 <div class="block-1 block">
-                    <a href="">Написать директору</a>
+                    <a href="../templates/report.html">Написать директору</a>
                 </div>
                 <div class="block-2 block">
                     <a href="">Для учителей</a>
@@ -253,7 +307,7 @@
         </div>
     </div>
     <div class="copy">
-        <i class="far fa-copyright"></i> МБОУ СОШ№20 г.Ставрополь 2020
+        <i class="far fa-copyright"></i> МБОУ СОШ№20 г.Ставрополь 2021
     </div>
 </footer>
 <!-- / FOOTER -->
@@ -265,7 +319,8 @@
 <!-- / jQuery and jQ-plugin -->  
 
 <!-- WEB-site scripts -->
-    -<script src="../script/index.js"></script>
+    <script src="../script/index.js"></script>
+    <script src="../script/baguetteBox.js"></script>
 <!-- / WEB-site scripts -->
 
 </body>

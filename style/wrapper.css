@@ -175,7 +175,7 @@
     border-radius: 50%;
 }
 
-.logo__new-name  > h1 {
+.logo__row-name  > h1 {
     font-weight: 600;
     margin: 0 0 16px 0;
     padding: 0;
@@ -197,25 +197,23 @@
     font-weight: 600;
 }
 
-.content-image > ul {
-    display: flex;
-    margin: 0;
+.content-image {
     padding: 6px 0 0 0;
 }
 
-.content-image > ul > li {
+.content-image > div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.content-image > div > a {
+    display: block;
+    width: 250px;
+    height: 200px;
     margin: 0 10px 0 0;
 }
 
-.content-image > ul > li > span {
-    display: block;
-    width: 180px;
-    max-width: 100%;
-    height: 140px;
-}
-
-.content-image > ul > li > span > img {
-    width: 100%;
-    height: 100%;
+.content-image > div > a > img {
     border-radius: 3px;
 }
